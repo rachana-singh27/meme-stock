@@ -1,0 +1,17 @@
+<% var endNum = 0; %>
+<% if(memes.length > 100) { %>
+<%   endNum = memes.length - 100; %>
+<% } %>
+
+
+<% for(let i = memes.length-1; i >= endNum; i--) { %>
+
+  <div class="meme">
+
+    <h1><%=memes[i].name%></h1>
+    <h2><%=memes[i].caption%></h2>
+    <img src=<%=memes[i].url%>>
+    <hr>
+
+  </div>
+<% } %>
