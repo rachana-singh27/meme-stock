@@ -25,7 +25,7 @@ const Meme = mongoose.model("Meme", memesSchema);
 
 
 
-app.get("/memes", function(req, res) {
+app.get("/", function(req, res) {
 
   res.sendFile(__dirname + "/index.html");
 });
@@ -44,7 +44,7 @@ app.get("/view", function(req, res) {
 
 });
 
-app.post("/memes", function(req, res) {
+app.post("/", function(req, res) {
 
   const meme = new Meme({
     name: req.body.fName,
@@ -54,7 +54,7 @@ app.post("/memes", function(req, res) {
 
   meme.save(function(err){
     if (!err){
-        res.redirect("/memes");
+        res.redirect("/");
     }
   });
 
