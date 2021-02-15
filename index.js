@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended : true}));
 
-mongoose.connect("mongodb+srv://adm-rachana:test123@cluster0.s8kdv.mongodb.net/memeDB", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://<username>:<password>@cluster0.s8kdv.mongodb.net/memeDB", {useNewUrlParser: true, useUnifiedTopology: true});
 
 const memesSchema = {
   name: String,
