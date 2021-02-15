@@ -1,13 +1,13 @@
 # meme-stock
 
-steps to run locally :
+Flows :-
+The meme-stock application takes the name of the meme owner, the caption of the meme, and the URL of the meme. Then it stores those memes on the database, when clicked on submit meme buuton.
+The page will get automatically refreshed upon clicking on the submit meme button.
+Users can view the memes submitted by clicking on the view memes button, which displays all the memes submitted in reverse chronology order. If no memes are submitted, then it shows blank page,
+and if more than 100 memes are posted, then it shows only recent 100 memes. Then users can come back to the home page (on which memes are submitted) by clicking on the back button of their browser.
+Tech used :-
 
-1. clone the project file into Atom (or any text editor, for node.js), and install node.js with npm packages.
-
- 2.(a) for windows users: assuming you've git installed and also have hyper terminal installed (optional), run npm install on your terminal
- 2.(b) for mac users: simply run npm install.
-This will install all the project dependencies.
-
-3. run node index.js command, this will run the application on your localhost:3000 (as it's listening to this port as well).
-
-4. In your terminal, you'll get output as "server is running on port 3000." That's it, the application is running locally. Note that the database connection is already established, and whatever memes are posted are getting saved.
+HTML, CSS, Bootstrap, Javascript for frontend
+Node.js, express.js, Ejs for backend
+MongoDB atlas database for storing the memes (name, caption and url)
+Entire Code Deployed on Heroku
